@@ -1,0 +1,389 @@
+body{
+    background-color: #5D6150;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 1fr, auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        flex-grow: 1;
+}
+
+/* Grid Items For Home Page */
+
+.grid_item_1{
+    display:flex;
+    background-color: #333;
+    padding: 10px 0;
+    font-family: 'Pixelify Sans';
+    height: 10vh;
+    gap:7vw;
+    border: solid 5px;
+    border-color: #595C2E;
+}
+
+.grid_item_2{
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+.grid_item_4{
+
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    background-color:#595C2E;
+    margin-bottom: 3em;
+    border-radius: 15%;
+}
+
+.grid_item_5{
+    width: 100%;
+}
+
+.grid_item_2 a{
+    font-size: 2.5em;
+    color: #CCDB00;
+    font-family: 'Pixelify Sans';
+}
+
+
+/* css for text on pages */
+
+
+h1{
+    font-size: 2.5em;
+    padding-right: 2em;
+    padding-left: 1em;
+    color: #CCDB00;
+    font-family: 'Pixelify Sans';
+}
+
+h2{
+    font-size: 5em;
+    text-align: center;
+    color: #CCDB00;
+    font-family: 'Pixelify Sans';
+}
+
+p{
+    font-size: 3em;
+    text-align: center;
+    color: #CCDB00;
+    font-family:"inconsolata";
+    display: block;
+}
+
+header {
+    grid-area: header;
+}
+
+nav ul{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.7vw;
+}
+
+a{
+    color:#A4B674;
+}
+
+a:hover{
+    color:#C1E06A;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #A4B674;
+    padding: 18px;
+    text-align: center;
+}
+
+.bg{
+    padding: 1em;
+    border: solid 10px;
+    border-color: #595C2E;  
+    height:50vh;
+    opacity: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* contact page css elements */
+
+
+.contact_info{
+    margin: auto;
+    text-align: center;
+}
+
+.contact_info h1{
+    font-size: 5em;
+    text-decoration:underline;
+}
+.contact_info a{
+    display: block;
+    font-size: 5em;
+    font-family: inconsolata;
+}
+
+.contact_info h2{
+    font-family: inconsolata;
+}
+
+.contactBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.contact_fig img{
+    max-width: 8vw;
+    max-height: 8vh;
+    align-self: center;
+}
+
+.contact_fig figcaption{
+    font-size: 4em;
+    font-family: "Pixelify Sans";
+    color:#CCDB00;
+}
+
+.contact_fig{
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+    margin: auto;
+}
+
+
+/* blog entry css */
+.blog_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.blog-container {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #A4B674;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    margin-top:8em;
+}
+
+.blog-container h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Pixelify Sans";
+    font-size: 2em;
+    color:#CCDB00;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    height: 200px;
+}
+
+.submit-btn {
+    background-color:#5D6150;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #C1E06A;
+}
+
+.education_body{
+    display:flex;
+    justify-content: center;
+}
+
+.education section{
+    background-color: #595C2E;
+    border: solid 10px #A4B674;
+    border-radius: 1%;
+}
+
+.education_item h2, .education_item p{
+    text-align: left;
+    padding: 10px;
+}
+
+.education_item h2{
+    padding-top:20px;
+    border-top: solid 2px #C1E06A;
+}
+
+.education h1{
+    font-size: 7em;
+}
+
+.back_button{
+    width: 100%;
+    font-size: 5em;
+    padding-left: 1em;
+    font-family: "Pixelify Sans";
+}
+
+.experience_body{
+    display:flex;
+    flex-direction: column;
+}
+
+.experience_cont{
+    text-align: center;
+    padding-bottom: 400px;
+}
+
+.experience_cont h1{
+    font-size: 5em;
+}
+
+.education footer{
+    width:auto;
+}
+
+.blog_viewer_body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 5em;
+}
+
+.blog_post_cont{
+    border-bottom: solid 3px #CCDB00;
+    border-top: solid 3px #CCDB00;
+    width:70%;
+}
+
+.blog_post_cont h1{
+    padding:0;
+    font-size: 7em;
+    text-align: center;
+}
+
+.blog_post_cont h2{
+    font-size: 7em;
+    text-align: center;
+}
+
+.blog_post_cont h2, p{
+    padding-bottom: 20px;
+    color:#A4B674;
+}
+
+.blog_post_cont a{
+    font-size: 5em;
+    font-family: "Pixelify Sans";
+    text-align: center;
+}
+
+.blog_post_head h1{
+    padding:0;
+    font-size: 7em;
+    text-align: center;
+}
+
+.blog_post_head a{
+    font-size: 5em;
+    font-family: "Pixelify Sans";
+    text-align: center;
+}
+
+.skills_body{
+    display:flex;
+    flex-direction: column;
+}
+
+.skills_body h1{
+    text-align: center;
+    font-size: 5em;
+    padding-bottom: 3em;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #595C2E;
+    border-radius: 10px;
+    border: solid 3px #CCDB00;
+    align-self: center;
+}
+
+.skill-card {
+    background-color: #A4B674;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Pixelify Sans";
+    margin-bottom: 10px;
+}
+
+.skill-rating {
+    font-family: inconsolata;
+    font-size: 1em;
+    font-weight: bold;
+    color: #CCDB00;
+}
+
+.skill-rating span {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
