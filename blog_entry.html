@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body class="blog_body">
+    <div class="blog-container">
+        <h1>Create a Blog Post</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="title">Blog Post Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter the title of your blog post" required>
+            </div>
+
+            <div class="input-group">
+                <label for="content">Blog Post Content</label>
+                <textarea id="content" name="content" placeholder="Write your blog post here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Publish Post</button>
+        </form>
+    </div>
+    <div class="back_button">
+        <a href="blog_viewer.html">Back</a>
+    </div>
+</body>
+</html>
