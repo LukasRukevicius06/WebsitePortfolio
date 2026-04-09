@@ -1,44 +1,44 @@
-body{
+body
+{
     background-color: #5D6150;
 }
 
-html, body {
+html, body 
+{
     width: 100%;
     height: 100%;
 }
 
-.container{
+.container
+{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto, 1fr, auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-        flex-grow: 1;
+    grid-template-rows: 1fr;
 }
 
 /* Grid Items For Home Page */
 
-.grid_item_1{
+.grid_item_1
+{
     display:flex;
     background-color: #333;
     padding: 10px 0;
     font-family: 'Pixelify Sans';
     height: 10vh;
-    gap:7vw;
-    border: solid 5px;
+    gap:1vw;
+    border: solid 10px;
     border-color: #595C2E;
 }
 
-.grid_item_2{
+.grid_item_2
+{
     padding-top: 10vh;
     padding-bottom: 3vh;
     text-align: center;
 }
 
-.grid_item_4{
-
+.grid_item_4
+{
     width: 60%;
     display: block;
     margin-left: auto;
@@ -49,11 +49,13 @@ html, body {
     border-radius: 15%;
 }
 
-.grid_item_5{
+.grid_item_5
+{
     width: 100%;
 }
 
-.grid_item_2 a{
+.grid_item_2 a
+{
     font-size: 2.5em;
     color: #CCDB00;
     font-family: 'Pixelify Sans';
@@ -63,22 +65,25 @@ html, body {
 /* css for text on pages */
 
 
-h1{
+h1
+{
     font-size: 2.5em;
-    padding-right: 2em;
+    padding-right: 3vw;
     padding-left: 1em;
     color: #CCDB00;
     font-family: 'Pixelify Sans';
 }
 
-h2{
+h2
+{
     font-size: 5em;
     text-align: center;
     color: #CCDB00;
     font-family: 'Pixelify Sans';
 }
 
-p{
+p
+{
     font-size: 3em;
     text-align: center;
     color: #CCDB00;
@@ -86,32 +91,38 @@ p{
     display: block;
 }
 
-header {
+header 
+{
     grid-area: header;
 }
 
-nav ul{
+nav ul
+{
     display: flex;
-    gap: 2vw;
-    font-size: 1.7vw;
+    gap: 1vw;
+    font-size: 1.5vw;
 }
 
-a{
+a
+{
     color:#A4B674;
 }
 
-a:hover{
+a:hover
+{
     color:#C1E06A;
 }
 
-footer {
+footer 
+{
     grid-area: footer;
     background-color: #A4B674;
     padding: 18px;
     text-align: center;
 }
 
-.bg{
+.bg
+{
     padding: 1em;
     border: solid 10px;
     border-color: #595C2E;  
@@ -123,87 +134,92 @@ footer {
 }
 
 
-/* contact page css elements */
-
-
-.contact_info{
+.contact_info
+{
     margin: auto;
     text-align: center;
 }
 
-.contact_info h1{
+.contact_info h1
+{
     font-size: 5em;
     text-decoration:underline;
 }
-.contact_info a{
+.contact_info a
+{
     display: block;
     font-size: 5em;
     font-family: inconsolata;
 }
 
-.contact_info h2{
+.contact_info h2
+{
     font-family: inconsolata;
 }
 
-.contactBody {
+.contactBody 
+{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
 }
 
-.contact_fig img{
+.contact_fig img
+{
     max-width: 8vw;
     max-height: 8vh;
     align-self: center;
 }
 
-.contact_fig figcaption{
+.contact_fig figcaption
+{
     font-size: 4em;
     font-family: "Pixelify Sans";
     color:#CCDB00;
 }
 
-.contact_fig{
+.contact_fig
+{
     display: flex;
     flex-direction: row;
     gap: 7vw;
     margin: auto;
 }
 
-
-/* blog entry css */
-.blog_body{
+.blog_body
+{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
 }
 
-.blog-container {
+.blog-container 
+{
     display:flex;
     flex-direction: column;
     margin: auto;
     background-color: #A4B674;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 600px;
     max-width: 100%;
     margin-top:8em;
 }
 
-.blog-container h1 {
+.blog-container h1 
+{
     text-align: center;
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-.input-group {
+.input-group 
+{
     margin-bottom: 15px;
 }
 
-.input-group label {
+.input-group label 
+{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -212,8 +228,8 @@ footer {
     color:#CCDB00;
 }
 
-.input-group input,
-.input-group textarea {
+.input-group input, .input-group textarea 
+{
     width: 95%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -221,11 +237,13 @@ footer {
     font-size: 16px;
 }
 
-.input-group textarea {
+.input-group textarea 
+{
     height: 200px;
 }
 
-.submit-btn {
+.submit-btn 
+{
     background-color:#5D6150;
     color: white;
     padding: 10px 20px;
@@ -235,120 +253,152 @@ footer {
     font-size: 16px;
 }
 
-.submit-btn:hover {
+.submit-btn:hover 
+{
     background-color: #C1E06A;
 }
 
-.education_body{
+.education_body
+{
     display:flex;
     justify-content: center;
 }
 
-.education section{
+.education section
+{
     background-color: #595C2E;
     border: solid 10px #A4B674;
     border-radius: 1%;
 }
 
-.education_item h2, .education_item p{
+.education_item h2, .education_item p
+{
     text-align: left;
     padding: 10px;
 }
 
-.education_item h2{
+.education_item h2
+{
     padding-top:20px;
     border-top: solid 2px #C1E06A;
 }
 
-.education h1{
+.education h1
+{
     font-size: 7em;
 }
 
-.back_button{
-    width: 100%;
-    font-size: 5em;
+.back_button
+{
     padding-left: 1em;
+    font-size: 5em;
     font-family: "Pixelify Sans";
 }
 
-.experience_body{
+.experience_body
+{
     display:flex;
     flex-direction: column;
 }
 
-.experience_cont{
+.experience_cont
+{
     text-align: center;
-    padding-bottom: 400px;
+    padding-bottom: 40px;
 }
 
-.experience_cont h1{
+.experience_cont h1
+{
     font-size: 5em;
 }
 
-.education footer{
+.experience_body h2
+{
+    font-size: 3em;
+    color: #A4B674;
+}
+
+.education footer
+{
     width:auto;
 }
 
-.blog_viewer_body{
+.blog_viewer_body
+{
     display:flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
     gap: 5em;
 }
 
-.blog_post_cont{
+.blog_viewer_body, .back_button
+{
+    align-self: flex-start;
+}
+
+.blog_post_cont
+{
     border-bottom: solid 3px #CCDB00;
     border-top: solid 3px #CCDB00;
     width:70%;
+    overflow-wrap: break-word;
 }
 
-.blog_post_cont h1{
+.blog_post_cont h1
+{
     padding:0;
     font-size: 7em;
     text-align: center;
 }
 
-.blog_post_cont h2{
+.blog_post_cont h2
+{
     font-size: 7em;
     text-align: center;
 }
 
-.blog_post_cont h2, p{
+.blog_post_cont h2, p
+{
     padding-bottom: 20px;
     color:#A4B674;
 }
 
-.blog_post_cont a{
+.blog_post_cont a
+{
     font-size: 5em;
     font-family: "Pixelify Sans";
     text-align: center;
 }
 
-.blog_post_head h1{
+.blog_post_head h1
+{
     padding:0;
     font-size: 7em;
     text-align: center;
 }
 
-.blog_post_head a{
+.blog_post_head a
+{
     font-size: 5em;
     font-family: "Pixelify Sans";
     text-align: center;
 }
 
-.skills_body{
+.skills_body
+{
     display:flex;
     flex-direction: column;
 }
 
-.skills_body h1{
+.skills_body h1
+{
     text-align: center;
     font-size: 5em;
     padding-bottom: 3em;
 }
 
-.skills-container {
+.skills-container 
+{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -361,29 +411,180 @@ footer {
     align-self: center;
 }
 
-.skill-card {
+.skill-card 
+{
     background-color: #A4B674;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.skill-name {
+.skill-name 
+{
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Pixelify Sans";
     margin-bottom: 10px;
 }
 
-.skill-rating {
+.skill-rating 
+{
     font-family: inconsolata;
     font-size: 1em;
     font-weight: bold;
     color: #CCDB00;
 }
 
-.skill-rating span {
+.skill-rating span 
+{
     font-size: 1.5em;
     color: #ffcc00;
 }
+
+.login_body 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-container 
+{
+    margin: auto;
+    background: #595C2E;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 10px;
+    border-color:#A4B674;
+    text-align: center;
+    width: 300px;
+}
+.login-container h2 
+{
+    margin-bottom: 20px;
+    color: #C1E06A;
+}
+.input-field 
+{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid #595C2E;
+    border-radius: 5px;
+}
+.login-button 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #C1E06A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-button:hover 
+{
+    background: #A4B674;
+}
+
+.login_box span
+{
+    font-family: inconsolata;
+    color:#CCDB00;
+    font-size: 2em;
+}
+
+.error-message 
+{
+    color: #595C2E;
+    background-color: #A4B674;
+    border: 1px solid #595C2E;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    h1, h2, p, a {
+      font-size: 1.5em;
+    }
+  
+    .grid_item_1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: auto;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1em;
+      padding: 0;
+    }
+  
+    .grid_item_4 {
+      width: 90%;
+      padding: 1em;
+      border-radius: 10px;
+    }
+  
+    .bg {
+      height: auto;
+      width: 90%;
+      max-height: 40vh;
+    }
+  
+    .blog-container, .login-container 
+    {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .skills-container 
+    {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+    }
+  
+    .contact_fig 
+    {
+      flex-direction: column;
+      gap: 2em;
+    }
+  
+    .contact_fig img 
+    {
+      max-width: 30vw;
+      max-height: 30vh;
+    }
+  
+    .blog_post_cont h1, .blog_post_cont h2, .blog_post_head h1, .blog_post_head a 
+    {
+      font-size: 2em;
+    }
+  
+    .education h1, .experience_cont h1, .skills_body h1 
+    {
+      font-size: 3em;
+    }
+  
+    .input-group label, .input-group input, .input-group textarea, .submit-btn 
+    {
+      font-size: 1em;
+    }
+  
+    .skill-name, .skill-rating 
+    {
+      font-size: 1em;
+    }
+  
+    .login-button 
+    {
+      font-size: 1em;
+    }
+  }
